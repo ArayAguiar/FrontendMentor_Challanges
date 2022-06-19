@@ -1,0 +1,42 @@
+.container {
+    // border: 1px solid magenta; //temporary
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        background-color: $white;
+        max-width: 320px;
+        border-radius: 20px;
+        padding: 1rem;
+
+        .qr-code {
+            max-width: 50%;
+
+            img {
+                width: 288px;
+                border-radius: 10px;
+            }
+        }
+
+        h1 {
+            font-size: $font-size-header;
+            line-height: 22px;
+            text-align: center;
+            color: $dark-blue;
+            margin-top: 30px;
+        }
+        
+        p {
+            font-size: $font-size-paragraph;
+            line-height: 20px;
+            text-align: center;
+            padding: 4px;
+            color: $grayish-blue;
+            margin-top: 20px;
+            margin-bottom: 28px;
+        }
+    }
+}
