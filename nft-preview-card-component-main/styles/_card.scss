@@ -1,0 +1,157 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        background-color: $very-dark-blue_cardBG;
+        // width: 88%;
+        border-radius: 12px;
+        padding: 24px;
+        max-width: 328px;
+        transition: all ease-out .2s;
+        
+
+        .illustration {
+            position: relative;
+            cursor: pointer;
+
+            .card-image {
+                width: 280px;
+                border-radius: 12px;
+                // border: 1px solid green;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                
+            }
+
+            .overlay {
+                opacity: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 12px;
+                transition: all ease-out .2s;
+
+                img {
+                    z-index: 1;
+                }
+
+                &::before {
+                    // color overlay
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    background: $cyan;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 12px;
+                    z-index: 0;
+                    opacity: .6;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            
+            
+
+        }
+
+        .infobox {
+
+            margin-top: 28px;
+
+            h1 {
+                font-size: 22px;
+                color: $white;
+                font-weight: 600;
+                margin-bottom: 20px;
+                cursor: pointer;
+                transition: all ease-out .2s;
+
+                &:hover {
+                    color: $cyan;
+                }
+            }
+
+            p {
+                color: $soft-blue;
+                font-weight: 300;
+                letter-spacing: -0.8px;
+                line-height: 28px;
+                margin-bottom: 20px;
+            }
+
+            .price-day-info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 16px;
+                font-size: 16px;
+
+                .price {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 600;
+                    color: $cyan;
+                }
+
+                .daysleft {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 300;
+                    color: $soft-blue;
+                }
+
+                //icons inside the price and date info
+                .icon {
+                    margin-right: 6px;
+                }
+            }
+        }
+
+        .divider {
+            border-bottom: 1px solid $very-dark-blue_line;
+            margin-bottom: 16px;
+        }
+
+        .creator {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 34px;
+                border: 1px solid $white;
+                border-radius: 50%;
+                margin-right: 16px;
+            }
+
+            span {
+                font-weight: 300;
+                color: $soft-blue;
+                
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    transition: all ease-out .2s;
+
+                    &:hover {
+                        color: $cyan;
+                    }
+                }
+            }
+        }
+    }
+}
