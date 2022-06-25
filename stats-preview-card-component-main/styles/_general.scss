@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: $font-size;
+    background-color: $very-dark-blue-mainBG;
+    color: white; // temporary
+}
