@@ -1,0 +1,25 @@
+// ## Colors
+
+// ### Primary
+
+$dark-cyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+
+// ### Neutral
+
+$very-dark-blue: hsl(212, 21%, 14%);
+$dark-grayish-blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+
+// ### Font
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+// - Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+// - Weights: 500, 700
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+// - Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+// - Weights: 700
+
+@import 'general';
+@import 'card';

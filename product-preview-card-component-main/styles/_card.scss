@@ -1,0 +1,92 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        width: 90%;
+        background-color: $white;
+        border-radius: 12px;
+
+
+        .product-img {
+
+            img {
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+            }
+        }
+
+        .info {
+
+            padding: 0 24px;
+            text-align: left;
+
+            .product-type, h2 {
+                // font-family: 'Fraunces', sans-serif;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                letter-spacing: 0.255em;
+                text-transform: uppercase;
+                font-size: 14px;
+                color: $dark-grayish-blue;
+                
+            }
+
+            .product-name, h1 {
+                font-family: 'Fraunces', sans-serif;
+                font-weight: 700;
+                color: $very-dark-blue;
+            }
+
+            .description, p {
+                color: $dark-grayish-blue;
+                line-height: 24px;
+            }
+            
+            .price {
+
+                display: flex;
+                justify-content: left;
+                align-items: center;
+
+                .sale-price, h1 {
+                    font-family: 'Fraunces', sans-serif;
+                    font-weight: 700;
+                    color: $dark-cyan;
+                }
+
+                .original-price {
+                    text-decoration: line-through;
+                    color: $dark-grayish-blue;
+                    margin-left: 10px;
+                }
+            }
+
+            .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $dark-cyan;
+                color: $white;
+                border-radius: 6px;
+            }
+
+            .add2cart{
+                padding: 10px;
+                img {
+                    margin-right: 8px;
+                }
+                span {
+                    font-weight: 700;
+                }
+            }
+
+        }
+
+
+
+    }
+}

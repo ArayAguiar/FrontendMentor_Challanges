@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  background-color: #f2ebe3;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card {
+  width: 90%;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.container .card .product-img img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.container .card .info {
+  padding: 0 24px;
+  text-align: left;
+}
+
+.container .card .info .product-type, .container .card .info h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.255em;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #6c7289;
+}
+
+.container .card .info .product-name, .container .card .info h1 {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 700;
+  color: #1c232b;
+}
+
+.container .card .info .description, .container .card .info p {
+  color: #6c7289;
+  line-height: 24px;
+}
+
+.container .card .info .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .info .price .sale-price, .container .card .info .price h1 {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 700;
+  color: #3c8067;
+}
+
+.container .card .info .price .original-price {
+  text-decoration: line-through;
+  color: #6c7289;
+  margin-left: 10px;
+}
+
+.container .card .info .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #3c8067;
+  color: white;
+  border-radius: 6px;
+}
+
+.container .card .info .add2cart {
+  padding: 10px;
+}
+
+.container .card .info .add2cart img {
+  margin-right: 8px;
+}
+
+.container .card .info .add2cart span {
+  font-weight: 700;
+}
+/*# sourceMappingURL=styles.css.map */
