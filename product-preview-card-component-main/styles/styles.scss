@@ -13,6 +13,8 @@ $white: hsl(0, 0%, 100%);
 
 // ### Font
 
+$font-size-paragraph: 0.875rem;
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 // - Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
 // - Weights: 500, 700
@@ -23,3 +25,4 @@ $white: hsl(0, 0%, 100%);
 
 @import 'general';
 @import 'card';
+@import 'media425px';
