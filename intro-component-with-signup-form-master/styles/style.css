@@ -1,0 +1,216 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  background-color: #ff7a7a;
+}
+
+section {
+  max-width: 100%;
+  width: 50%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: url("../images/bg-intro-desktop.png") no-repeat;
+  background-size: cover;
+  padding: 0 10.25rem;
+}
+
+main .info {
+  color: #ffff;
+  padding-right: 1.875rem;
+}
+
+main .info .header {
+  font-size: 3.125rem;
+  line-height: 3.5rem;
+  margin-bottom: 2.75rem;
+}
+
+main .info p {
+  line-height: 1.5625rem;
+  opacity: .9;
+}
+
+main .signup-form .trial {
+  background-color: #6055a5;
+  color: #e2e2e2;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  font-weight: 400;
+  -webkit-box-shadow: 0 7px rgba(62, 60, 73, 0.3);
+          box-shadow: 0 7px rgba(62, 60, 73, 0.3);
+}
+
+main .signup-form .trial span {
+  font-weight: 600;
+  color: #ffff;
+}
+
+main .signup-form #form {
+  background-color: #ffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+  padding: 2.375rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 7px rgba(62, 60, 73, 0.3);
+          box-shadow: 0 7px rgba(62, 60, 73, 0.3);
+}
+
+main .signup-form form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+main .signup-form form div input {
+  padding: 1.25rem 1.875rem;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e2e2e2;
+  font-weight: 500;
+  font-size: 0.875rem;
+  caret-color: #6055a5;
+}
+
+main .signup-form form div input:focus {
+  outline: none;
+  border: 1px solid #6055a5;
+}
+
+main .signup-form form div input:active {
+  border: 1px solid #6055a5;
+}
+
+main .signup-form form div span {
+  display: none;
+  margin-top: 4px;
+  text-align: right;
+  font-style: italic;
+  color: #ff7a7a;
+  font-size: 0.75rem;
+}
+
+main .signup-form form button {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 1.25rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #38cc8c;
+  color: #ffff;
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px #2aa26e;
+          box-shadow: 0 2px #2aa26e;
+}
+
+main .signup-form form button:hover {
+  opacity: 0.8;
+}
+
+main .signup-form form button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+main .signup-form form p {
+  font-size: 0.625rem;
+  color: #b9b6d3;
+  margin: auto;
+  text-align: center;
+}
+
+main .signup-form form p a {
+  text-decoration: none;
+  color: #ff7a7a;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.error {
+  border: 2px solid #ff7a7a;
+}
+
+@media (max-width: 960px) {
+  body {
+    font-size: 0.875rem;
+  }
+  main {
+    padding: 2.5rem 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 4.375rem;
+    background: url("../images/bg-intro-mobile.png");
+  }
+  main .info {
+    text-align: center;
+  }
+  main .info .header {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.375rem;
+  }
+  main .signup-form .trial {
+    padding: 1rem 3.75rem;
+  }
+  main .signup-form #form {
+    padding: 1.5rem;
+  }
+  main .signup-form form div input {
+    padding: 1rem 1.25rem;
+  }
+  section {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

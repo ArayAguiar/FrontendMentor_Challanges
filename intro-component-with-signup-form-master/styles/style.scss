@@ -19,6 +19,9 @@ $grayish-blue: hsl(246, 25%, 77%);
 // ### Body Copy
 
 $font-size: 1rem;
+$info-header:3.125rem;
 
 
 @import 'general';
+@import 'form';
+@import 'small-screens';

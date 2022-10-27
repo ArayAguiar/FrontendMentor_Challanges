@@ -1,0 +1,156 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    
+    font-size: $font-size;
+    background-color: $red;
+}
+
+section {
+    max-width: 100%;
+    width: 50%;
+    // border: 1px solid red;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../images/bg-intro-desktop.png') no-repeat;
+    background-size: cover;
+    padding: 0 10.25rem;
+
+    .info {
+        color: #ffff;
+        padding-right: 1.875rem;
+
+        .header{
+            font-size: $info-header;
+            line-height: 3.5rem;
+            margin-bottom: 2.75rem;
+        }
+
+        p {
+            line-height: 1.5625rem;
+            opacity: .9;
+        }
+    }
+
+    .signup-form {
+
+        .trial {
+            
+            background-color: $blue;
+            color: #e2e2e2;
+            padding: 1.25rem 1rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            font-weight: 400;
+            box-shadow: 0 7px hsla(249, 10%, 26%, 0.3);
+
+            span{
+                font-weight: 600;
+                color: #ffff;
+            }
+        }
+
+        #form {
+            background-color: #ffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 2.375rem;
+            border-radius: 8px;
+            box-shadow: 0 7px hsla(249, 10%, 26%, 0.3);
+        }
+
+        form {
+
+            
+
+            div {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                
+
+                input{
+                    padding: 1.25rem 1.875rem;
+                    width: 100%;
+                    border-radius: 8px;
+                    border: 1px solid #e2e2e2;
+                    font-weight: 500;
+                    font-size: 0.875rem;
+                    caret-color: $blue;
+
+                    &:focus {
+                        outline: none;
+                        border:1px solid $blue;
+                    }
+
+                    &:active {
+                        border:1px solid $blue;
+                    }
+                }
+
+                span {
+                    display: none;
+                    margin-top: 4px;
+                    text-align: right;
+                    font-style: italic;
+                    color: $red;
+                    font-size: 0.75rem;
+                }
+            }
+            
+            button {
+                width: 100%;
+                text-transform: uppercase;
+                padding: 1.25rem 1rem;
+                border: none;
+                border-radius: 6px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                background-color: $green;
+                color: #ffff;
+                cursor: pointer;
+                box-shadow: 0 2px hsla(154, 59%, 40%, 1);
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                &:active {
+                    box-shadow: none;
+                    transform: translateY(2px);
+                }
+            }
+
+            p {
+                font-size: 0.625rem;
+                color: $grayish-blue;
+                margin: auto;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: $red;
+                    cursor: pointer;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.error {
+    border: 2px solid $red;
+}
