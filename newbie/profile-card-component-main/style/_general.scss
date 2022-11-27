@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.125rem;
+    background-color: $dark-cyan;
+
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center; //*  align vertically 
+    justify-content: center; //* align horizontally
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.bg-top, .bg-bottom {
+    position: absolute;
+    z-index: 0;
+}
+
+.bg-top {
+    transform: translate(-50%,-50%);
+    
+}
+
+.bg-bottom {
+    transform: translate(50%,50%);
+}

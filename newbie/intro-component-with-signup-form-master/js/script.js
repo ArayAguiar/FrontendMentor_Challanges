@@ -12,26 +12,50 @@ form.addEventListener('submit', e => {
 
     if (firstname === '') {
         addErrorTo('first_name', 'First Name cannot be empty');
+    } else {
+        removeErrorFrom('first_name');
     }
+    
     if (lastname === '') {
         addErrorTo('last_name', 'Last Name cannot be empty');
+    } else {
+        removeErrorFrom('last_name');
     }
 
-    if ((email ==='') && (!isValid(email))) {
+    if (email ==='') {
+        addErrorTo('email', 'Email is required');
+    }else if (!isValid(email)) {
         addErrorTo('email', 'Looks like this is not an email');
+    }else {
+        removeErrorFrom('email');
     }
+
     if (password === '') {
         addErrorTo('password', 'Password cannot be empty');
+    } else {
+        removeErrorFrom('password');
     }
+
+    // console.log(firstname, lastname, email, password);
 
 });
 
 
 function addErrorTo(field, message){
+    const input = form[field].parentNode;
+    const span = input.querySelector('span');
 
-    const span = form[field].parentNode.querySelector('span');
+    input.classList.add('error');
     span.innerText = message;
     span.style.display = 'block';
+}
+
+function removeErrorFrom(field) {
+    const input = form[field].parentNode;
+    const span = input.querySelector('span');
+    
+    span.style.display = 'none';
+    input.classList.remove('error');
 }
 
 function isValid (email){

@@ -93,6 +93,7 @@ main .signup-form form div {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 main .signup-form form div input {
@@ -110,8 +111,14 @@ main .signup-form form div input:focus {
   border: 1px solid #6055a5;
 }
 
-main .signup-form form div input:active {
-  border: 1px solid #6055a5;
+main .signup-form form div img {
+  position: absolute;
+  opacity: 0;
+  height: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  right: 15px;
 }
 
 main .signup-form form div span {
@@ -121,6 +128,31 @@ main .signup-form form div span {
   font-style: italic;
   color: #ff7a7a;
   font-size: 0.75rem;
+}
+
+main .signup-form form .error input {
+  border: 2px solid #ff7a7a;
+  color: #ff7a7a;
+}
+
+main .signup-form form .error input::-webkit-input-placeholder {
+  color: #ff7a7a;
+}
+
+main .signup-form form .error input:-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+main .signup-form form .error input::-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+main .signup-form form .error input::placeholder {
+  color: #ff7a7a;
+}
+
+main .signup-form form .error img {
+  opacity: 1;
 }
 
 main .signup-form form button {
@@ -161,10 +193,6 @@ main .signup-form form p a {
   color: #ff7a7a;
   cursor: pointer;
   font-weight: 600;
-}
-
-.error {
-  border: 2px solid #ff7a7a;
 }
 
 @media (max-width: 960px) {

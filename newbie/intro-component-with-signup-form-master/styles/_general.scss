@@ -81,6 +81,7 @@ main{
                 display: flex;
                 flex-direction: column;
                 width: 100%;
+                position: relative;
                 
 
                 input{
@@ -96,10 +97,15 @@ main{
                         outline: none;
                         border:1px solid $blue;
                     }
+                }
 
-                    &:active {
-                        border:1px solid $blue;
-                    }
+                img {
+                    position: absolute;
+                    opacity: 0;
+                    height: 20px;
+                    top: 50%;
+                    transform: translateY(-100%);
+                    right: 15px;
                 }
 
                 span {
@@ -109,6 +115,23 @@ main{
                     font-style: italic;
                     color: $red;
                     font-size: 0.75rem;
+                }
+            }
+
+
+            .error {
+
+                input {
+                    border: 2px solid $red;
+                    color: $red;   
+
+                    &::placeholder {
+                        color: $red;
+                    }
+                }
+
+                img {
+                    opacity: 1;
                 }
             }
             
@@ -151,6 +174,3 @@ main{
     }
 }
 
-.error {
-    border: 2px solid $red;
-}

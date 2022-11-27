@@ -1,0 +1,284 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    // overflow: hidden;
+
+    .info {
+
+        background-image: url("../images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+        width: 57.639%;
+        padding: 4.1rem 1rem 1rem 1rem;
+
+        .topnav{
+            width: 100%;
+            max-width: 27.873rem;
+            display: block;
+            
+            .logo {
+                display: block;
+            }
+        }
+
+        .inner-content {
+            max-width: 27.873rem;
+            margin-top: 8.47rem;
+            // max-height: 35.813rem;
+            // max-width: 445px;
+
+
+            .hero-heading {
+                margin-bottom: 1.253rem;
+
+                h1,h2 {
+                    font-size: 4rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.27em;
+                }
+
+                h1 {
+                    font-weight: 200;
+                    color: $desaturated-red;
+                }
+
+                h2 {
+                    font-weight: 600;
+                    line-height: 4.375rem;
+                    color: $dark-grayish-red;   
+                }
+            }
+
+            p {
+                color: $desaturated-red;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.7em;
+                letter-spacing: 0.002em;
+                margin-bottom: 2.7rem;
+            }
+
+            form {
+                position: relative;
+
+                input {
+                    background: transparent;
+                    border: 1px solid $desaturated-red;
+                    border-radius: 2.5rem;
+                    padding: 1.25rem 2.125rem;
+                    width: 100%;
+                    height: 3.5rem;
+                    font-size: 1rem;
+                    font-family: inherit;
+                    font-weight: 400;
+                    color: $dark-grayish-red;
+                    opacity: .7; 
+
+                    &::placeholder{
+                        color: $desaturated-red;
+                        opacity: .7;
+                    }
+
+                    &:focus{
+                        outline: none;
+                        border-width: 2px;
+                        opacity: 1;
+                    }
+                }
+
+                button{
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: 0;
+                    right: 0;
+                    border: none;
+                    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+                    padding: 1.25rem 2.813rem;
+                    width: 6.25rem;
+                    height: 3.5rem;
+                    border-radius: 2.5rem;
+                    box-shadow: 6px 4px 20px hsla(359, 74%, 77%, 0.5);
+                    cursor: pointer;
+                    transition: all 0.2s ease-in;
+
+                    &:hover{
+                        box-shadow: 6px 4px 20px hsla(359, 20%, 40%, 0.8);
+                        transform: scale(1.05);
+                    }
+
+                    &:focus{
+                        background-image: linear-gradient(135deg, hsl(0, 85%, 92%), hsl(0, 77%, 88%));
+                    }
+
+                }
+
+                .error-icon{
+
+                    display: none;
+                    position: absolute;
+                    //* Height of error icon = 20x20 pixels so we center it (by halfing of the total height 56px(3.5rem) and translate upwards by -50%
+                    top: 1.75rem; 
+                    transform: translateY(-50%); 
+                    right: 7.188rem;
+                }
+
+                .error-message {
+                    display: none;
+                    margin-top: 0.75rem;
+                    margin-left: 2.125rem;
+                    font-size: 0.875rem;
+                    letter-spacing: -0.03em;
+                    color: $soft-red;
+                }
+            }
+
+            //class to add all the error alerts to the form
+            .error {
+
+                input {
+                    border: 2px solid $soft-red;
+                }
+
+                .error-message {
+                    display: block;
+                }
+
+                .error-icon{
+                    display: block;
+                }
+            }
+
+        }
+    
+    } 
+    
+    .hero {
+        background-image: url("../images/hero-desktop.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 42.362%;
+    }
+    
+}
+
+
+
+@keyframes enter-from-left {
+    to{
+        transform: translateX(0);
+    }
+    
+}
+
+//* Small Screens
+
+@media screen and (max-width: 720px){
+
+
+    .container {
+
+        overflow: scroll;
+
+        .hero {
+            display: none;
+        }
+    
+        .info {
+            width: 100%;
+            padding: 0;
+            align-items: flex-start;
+            
+    
+            .topnav, .inner-content {
+                // display: flex;
+                // justify-content: left;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .topnav {
+                display: flex;
+                height: 5.25rem;
+                align-items: center;
+                justify-content: left;
+                padding: 0 2rem 0 2rem;
+                
+                img {
+                    height: 24px;
+                    width: 102px;
+                }
+            }
+
+            .hero-mobile {
+                background-image: url("../images/hero-mobile.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 250px;
+                width: 100%;
+
+            }
+
+            .inner-content{
+                text-align: center;
+                align-items: center;
+                padding: 0 2rem 0 2rem;
+                margin-top: 4rem;
+
+                .hero-heading {
+                    margin-bottom: 1.253rem;
+    
+                    h1,h2 {
+                        font-size: 2.375rem;
+                        text-transform: uppercase;
+                        letter-spacing: 0.27em;
+                    }
+
+                    h2 {
+                        line-height: 2.563rem;
+                    }
+    
+                }
+
+                p{
+                    font-size: 0.875rem;
+                }
+
+                form {
+                    input {
+                        font-size: 0.875rem;
+                    }
+
+                    button {
+                        width: 4rem;
+                        padding: 1.25rem 2.5rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+
+}

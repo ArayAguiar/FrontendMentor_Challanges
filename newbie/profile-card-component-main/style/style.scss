@@ -1,0 +1,17 @@
+//* Colors 
+
+//primary
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+
+//neutral
+$dark-gray: hsl(0, 0%, 70%);
+$white: hsl(0, 0%, 100%);
+
+//* Typography
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+//Extra SCSS
+@import "general";
+@import "card";

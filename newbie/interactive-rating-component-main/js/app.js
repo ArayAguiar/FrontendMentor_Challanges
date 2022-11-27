@@ -27,5 +27,3 @@ function handleRatingClick(event) {
     value_rating = event.target.textContent;
     console.log(value_rating);
 }
-
-//console.log(rating);
