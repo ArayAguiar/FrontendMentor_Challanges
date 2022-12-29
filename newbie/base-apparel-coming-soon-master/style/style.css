@@ -160,8 +160,8 @@ body {
 }
 
 .container .info .inner-content form button:hover {
-  -webkit-box-shadow: 6px 4px 20px rgba(122, 82, 82, 0.8);
-          box-shadow: 6px 4px 20px rgba(122, 82, 82, 0.8);
+  -webkit-box-shadow: 6px 4px 20px rgba(122, 82, 82, 0.7);
+          box-shadow: 6px 4px 20px rgba(122, 82, 82, 0.7);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
