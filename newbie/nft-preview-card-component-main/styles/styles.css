@@ -1,204 +1,137 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 18px;
-  background-color: #0d192b;
+  background-color: hsl(217, 54%, 11%);
 }
 
 .container {
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .container .card {
-  background-color: #14253d;
+  background-color: hsl(216, 50%, 16%);
   border-radius: 12px;
   padding: 24px;
   max-width: 328px;
-  -webkit-transition: all ease-out .2s;
-  transition: all ease-out .2s;
+  transition: all ease-out 0.2s;
 }
-
 .container .card .illustration {
   position: relative;
   cursor: pointer;
 }
-
 .container .card .illustration .card-image {
   width: 280px;
   border-radius: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .container .card .illustration .overlay {
   opacity: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   border-radius: 12px;
-  -webkit-transition: all ease-out .2s;
-  transition: all ease-out .2s;
+  transition: all ease-out 0.2s;
 }
-
 .container .card .illustration .overlay img {
   z-index: 1;
 }
-
 .container .card .illustration .overlay::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: #00fff7;
+  background: hsl(178, 100%, 50%);
   width: 100%;
   height: 100%;
   border-radius: 12px;
   z-index: 0;
-  opacity: .6;
+  opacity: 0.6;
 }
-
 .container .card .illustration .overlay:hover {
   opacity: 1;
 }
-
 .container .card .infobox {
   margin-top: 28px;
 }
-
 .container .card .infobox h1 {
   font-size: 22px;
-  color: white;
+  color: hsl(0, 0%, 100%);
   font-weight: 600;
   margin-bottom: 20px;
   cursor: pointer;
-  -webkit-transition: all ease-out .2s;
-  transition: all ease-out .2s;
+  transition: all ease-out 0.2s;
 }
-
 .container .card .infobox h1:hover {
-  color: #00fff7;
+  color: hsl(178, 100%, 50%);
 }
-
 .container .card .infobox p {
-  color: #8bacda;
+  color: hsl(215, 51%, 70%);
   font-weight: 300;
   letter-spacing: -0.8px;
   line-height: 28px;
   margin-bottom: 20px;
 }
-
 .container .card .infobox .price-day-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 16px;
   font-size: 16px;
 }
-
 .container .card .infobox .price-day-info .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-weight: 600;
-  color: #00fff7;
+  color: hsl(178, 100%, 50%);
 }
-
 .container .card .infobox .price-day-info .daysleft {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-weight: 300;
-  color: #8bacda;
+  color: hsl(215, 51%, 70%);
 }
-
 .container .card .infobox .price-day-info .icon {
   margin-right: 6px;
 }
-
 .container .card .divider {
-  border-bottom: 1px solid #2f415b;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
   margin-bottom: 16px;
 }
-
 .container .card .creator {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .container .card .creator img {
   width: 34px;
-  border: 1px solid white;
+  border: 1px solid hsl(0, 0%, 100%);
   border-radius: 50%;
   margin-right: 16px;
 }
-
 .container .card .creator span {
   font-weight: 300;
-  color: #8bacda;
+  color: hsl(215, 51%, 70%);
 }
-
 .container .card .creator span a {
   text-decoration: none;
-  color: white;
-  -webkit-transition: all ease-out .2s;
-  transition: all ease-out .2s;
+  color: hsl(0, 0%, 100%);
+  transition: all ease-out 0.2s;
 }
-
 .container .card .creator span a:hover {
-  color: #00fff7;
-}
-/*# sourceMappingURL=styles.css.map */
+  color: hsl(178, 100%, 50%);
+}/*# sourceMappingURL=styles.css.map */

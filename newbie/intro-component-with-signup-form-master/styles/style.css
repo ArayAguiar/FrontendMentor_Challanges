@@ -1,14 +1,13 @@
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   font-size: 1rem;
-  background-color: #ff7a7a;
+  background-color: hsl(0, 100%, 74%);
 }
 
 section {
@@ -17,85 +16,57 @@ section {
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: url("../images/bg-intro-desktop.png") no-repeat;
   background-size: cover;
   padding: 0 10.25rem;
 }
-
 main .info {
-  color: #ffff;
+  color: white;
   padding-right: 1.875rem;
 }
-
 main .info .header {
   font-size: 3.125rem;
   line-height: 3.5rem;
   margin-bottom: 2.75rem;
 }
-
 main .info p {
   line-height: 1.5625rem;
-  opacity: .9;
+  opacity: 0.9;
 }
-
 main .signup-form .trial {
-  background-color: #6055a5;
+  background-color: hsl(248, 32%, 49%);
   color: #e2e2e2;
   padding: 1.25rem 1rem;
   text-align: center;
   margin-bottom: 1.5rem;
   border-radius: 8px;
   font-weight: 400;
-  -webkit-box-shadow: 0 7px rgba(62, 60, 73, 0.3);
-          box-shadow: 0 7px rgba(62, 60, 73, 0.3);
+  box-shadow: 0 7px hsla(249, 10%, 26%, 0.3);
 }
-
 main .signup-form .trial span {
   font-weight: 600;
-  color: #ffff;
+  color: white;
 }
-
 main .signup-form #form {
-  background-color: #ffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: white;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 1.25rem;
   padding: 2.375rem;
   border-radius: 8px;
-  -webkit-box-shadow: 0 7px rgba(62, 60, 73, 0.3);
-          box-shadow: 0 7px rgba(62, 60, 73, 0.3);
+  box-shadow: 0 7px hsla(249, 10%, 26%, 0.3);
 }
-
 main .signup-form form div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   position: relative;
 }
-
 main .signup-form form div input {
   padding: 1.25rem 1.875rem;
   width: 100%;
@@ -103,58 +74,41 @@ main .signup-form form div input {
   border: 1px solid #e2e2e2;
   font-weight: 500;
   font-size: 0.875rem;
-  caret-color: #6055a5;
+  caret-color: hsl(248, 32%, 49%);
 }
-
 main .signup-form form div input:focus {
   outline: none;
-  border: 1px solid #6055a5;
+  border: 1px solid hsl(248, 32%, 49%);
 }
-
 main .signup-form form div img {
   position: absolute;
   opacity: 0;
   height: 20px;
   top: 50%;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   right: 15px;
 }
-
 main .signup-form form div span {
   display: none;
   margin-top: 4px;
   text-align: right;
   font-style: italic;
-  color: #ff7a7a;
+  color: hsl(0, 100%, 74%);
   font-size: 0.75rem;
 }
-
 main .signup-form form .error input {
-  border: 2px solid #ff7a7a;
-  color: #ff7a7a;
+  border: 2px solid hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
 }
-
-main .signup-form form .error input::-webkit-input-placeholder {
-  color: #ff7a7a;
+main .signup-form form .error input::-moz-placeholder {
+  color: hsl(0, 100%, 74%);
 }
-
-main .signup-form form .error input:-ms-input-placeholder {
-  color: #ff7a7a;
-}
-
-main .signup-form form .error input::-ms-input-placeholder {
-  color: #ff7a7a;
-}
-
 main .signup-form form .error input::placeholder {
-  color: #ff7a7a;
+  color: hsl(0, 100%, 74%);
 }
-
 main .signup-form form .error img {
   opacity: 1;
 }
-
 main .signup-form form button {
   width: 100%;
   text-transform: uppercase;
@@ -163,34 +117,27 @@ main .signup-form form button {
   border-radius: 6px;
   font-weight: 600;
   letter-spacing: 1px;
-  background-color: #38cc8c;
-  color: #ffff;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
   cursor: pointer;
-  -webkit-box-shadow: 0 2px #2aa26e;
-          box-shadow: 0 2px #2aa26e;
+  box-shadow: 0 2px hsl(154, 59%, 40%);
 }
-
 main .signup-form form button:hover {
   opacity: 0.8;
 }
-
 main .signup-form form button:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  box-shadow: none;
+  transform: translateY(2px);
 }
-
 main .signup-form form p {
   font-size: 0.625rem;
-  color: #b9b6d3;
+  color: hsl(246, 25%, 77%);
   margin: auto;
   text-align: center;
 }
-
 main .signup-form form p a {
   text-decoration: none;
-  color: #ff7a7a;
+  color: hsl(0, 100%, 74%);
   cursor: pointer;
   font-weight: 600;
 }
@@ -201,16 +148,9 @@ main .signup-form form p a {
   }
   main {
     padding: 2.5rem 2rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 4.375rem;
     background: url("../images/bg-intro-mobile.png");
   }
@@ -233,12 +173,7 @@ main .signup-form form p a {
   }
   section {
     width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

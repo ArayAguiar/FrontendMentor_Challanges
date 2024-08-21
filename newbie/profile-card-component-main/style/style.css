@@ -2,29 +2,22 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   font-size: 1.125rem;
-  background-color: #19a2ae;
+  background-color: hsl(185, 75%, 39%);
 }
 
 .container {
   position: relative;
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   padding: 0 20px;
 }
@@ -35,126 +28,79 @@ body {
 }
 
 .bg-top {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .bg-bottom {
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
 }
 
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 350px;
   min-width: 300px;
-  background-color: white;
-  border-radius: .875rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.875rem;
   overflow: hidden;
   z-index: 1;
-  -webkit-box-shadow: 0px 4px 40px 4px rgba(66, 66, 66, 0.42);
-          box-shadow: 0px 4px 40px 4px rgba(66, 66, 66, 0.42);
+  box-shadow: 0px 4px 40px 4px hsla(0, 0%, 26%, 0.42);
   cursor: default;
 }
-
 .card .card-banner {
   width: 100%;
   margin-bottom: -50px;
 }
-
 .card .card-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   width: 100%;
   gap: 1.625rem;
 }
-
 .card .card-content .avatar {
   width: 100px;
   border-radius: 50%;
-  border: 0.25rem solid white;
+  border: 0.25rem solid hsl(0, 0%, 100%);
 }
-
 .card .card-content .basic-info .name-age {
   margin-bottom: 6px;
 }
-
 .card .card-content .basic-info .name-age .name {
   font-weight: 700;
-  color: #2d3248;
+  color: hsl(229, 23%, 23%);
   margin-right: 6px;
 }
-
 .card .card-content .basic-info .name-age .age {
-  color: #6a6f81;
+  color: hsl(227, 10%, 46%);
 }
-
 .card .card-content .basic-info .location {
   font-size: 0.875rem;
-  color: #6a6f81;
+  color: hsl(227, 10%, 46%);
 }
-
 .card .card-content .profile-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-top: 1px solid #b3b3b3;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid hsl(0, 0%, 70%);
   width: 100%;
 }
-
 .card .card-content .profile-info .data {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 1.625rem 0;
 }
-
 .card .card-content .profile-info .data .value {
   font-weight: 600;
-  color: #2d3248;
+  color: hsl(229, 23%, 23%);
 }
-
 .card .card-content .profile-info .data .description {
   font-size: 0.875rem;
-  color: #6a6f81;
-}
-/*# sourceMappingURL=style.css.map */
+  color: hsl(227, 10%, 46%);
+}/*# sourceMappingURL=style.css.map */
